@@ -3,21 +3,28 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 body{
     height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
 .memory-game{
     height: 40rem;
     width: 40rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     margin: auto;
-    perspective: 1000px;
+    -webkit-perspective: 1000px;
+            perspective: 1000px;
 }
 
 footer {
@@ -66,19 +73,34 @@ footer {
     height: calc(25% - 10px);
     margin: 5px;
     position: relative;
-    transform: scale(1);
-    transform-style: preserve-3d;
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    -webkit-transition: -webkit-transform .5s;
+    transition: -webkit-transform .5s;
+    -o-transition: transform .5s;
     transition: transform .5s;
-    object-fit: cover;
+    transition: transform .5s, -webkit-transform .5s;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
 .memory-card:active{
-    transform: scale(.97);
+    -webkit-transform: scale(.97);
+        -ms-transform: scale(.97);
+            transform: scale(.97);
+    -webkit-transition: -webkit-transform .2s;
+    transition: -webkit-transform .2s;
+    -o-transition: transform .2s;
     transition: transform .2s;
+    transition: transform .2s, -webkit-transform .2s;
 }
 
 .memory-card.flip{
-    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
 }
 
 .front-face, .back-face{
@@ -88,9 +110,11 @@ footer {
     position: absolute;
     border-radius: 5px;
     border: 2px solid pink;
-    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
 }
 
 .front-face{
-    transform: rotateY(180deg)
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg)
 }
