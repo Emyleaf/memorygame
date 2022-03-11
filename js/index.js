@@ -26,7 +26,7 @@ function flipCard(){
         setTimeout(() => {
             Swal.fire({
                 title: '<strong>Hai vinto!</strong>',  
-                imageUrl: '../img/icon.png',
+                imageUrl: 'img/icon.png',
                 imageWidth: 150,
                 imageHeight: 150,
                 imageAlt: 'Custom image',
