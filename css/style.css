@@ -98,6 +98,12 @@ footer {
     transition: transform .2s, -webkit-transform .2s;
 }
 
+.memory-card:hover{
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+}
+
 .memory-card.flip{
     -webkit-transform: rotateY(180deg);
             transform: rotateY(180deg);
@@ -109,7 +115,6 @@ footer {
     padding: 0%;
     position: absolute;
     border-radius: 5px;
-    border: 2px solid pink;
     -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
 }
