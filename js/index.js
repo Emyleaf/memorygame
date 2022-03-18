@@ -22,7 +22,7 @@ function flipCard(){
 
     checkForMatch();
 
-    if(score == 6){
+    if(score == 8){
         setTimeout(() => {
             Swal.fire({
                 title: '<strong>Hai vinto!</strong>',  
